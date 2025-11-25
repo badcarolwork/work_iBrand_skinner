@@ -12,8 +12,8 @@ window.onload = function () {
   centerWidth = document.getElementById("center").offsetWidth;
   centerHeight = document.getElementById("center").offsetHeight;
   
-  panelWidth = (window.innerWidth - centerWidth )/2; // for local preview
-  // panelWidth = (window.innerWidth - centerWidth / 0.8) / 2;
+  // panelWidth = (window.innerWidth - centerWidth )/2; // for local preview
+  panelWidth = (window.innerWidth - centerWidth / 0.8) / 2;
   panelHeight = centerHeight + 500;
   gsap.set(".left, .right", { width: panelWidth });
   addEvents();
