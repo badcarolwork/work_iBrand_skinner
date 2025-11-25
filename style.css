@@ -32,7 +32,8 @@ body {
         "bottom bottom  bottom";
     animation: fadeIn 1s ease-out forwards;
     background-color:#ffffff;
-    background-image: url(https://cdn.flashtalking.com/225135/5801984/bg.jpg);
+    /* background-image: url(https://cdn.flashtalking.com/225135/5801984/bg.jpg); */
+    background-image: url(https://badcarolwork.github.io/work_iBrand_skinner/bg.jpg);
     background-position: center top;
     background-size:auto 100%;
     background-repeat: no-repeat;
@@ -108,6 +109,7 @@ body {
     /* top: 24px; */
 }
 
+
 .bottom {
     grid-area: bottom;
     animation-delay: 0.5s;
@@ -175,14 +177,29 @@ body {
 }
 .right .content .price{
     width:50%;
-    bottom: 144px;
+    bottom:137px;
     left: 69px;
 }
 .left .content .lockup, .right .content .lockup{
     left: 0;
     right: 0;
-    bottom: 80px;
+    bottom: 65px;
     width: 80%;
+}
+.left .cta{
+    border-radius: 64px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    width: 185px;
+    height: 46px;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -10px;
 }
 .right {
     grid-area: right;
@@ -233,35 +250,7 @@ body {
         animation-delay: 0.3s !important;
     }
 }
-/* 2k monitor */
-@media (min-width: 2000px) {
-    .panel .panel-logo{
-        top:3%;
-    }
-    .left img, .right img {
-        width: 80%;
-        height: auto;
-    }
-    .left .char{
-        right:0;
-        left:unset;
-        top:32%;
-    }
-    .left .text, .right .text{
-        top:17%;
-    }
-    .left .cta-box, .right .cta-box{
-        bottom:4%
-    }
-    .left .cta-box .product, .right .cta-box .product{
-        width:25%;
-        right:5px;
-    }
-    #panelTop.topPanelScroll{
-        background-position: center -111px;
-        background-size: 2500px 1300px;
-    }
-}
+
 /* PC */
 @media (min-width:1024px){
     .top{
@@ -327,31 +316,31 @@ body {
         aspect-ratio: 131/89;
     }
 }
-/* ipad mini vertical*/
-@media (min-width:768px) and (max-width: 1023px) {
-    #logo{
-        left:-5%;
-        top:-2%;
+/** above 1920 screen*/
+@media (min-width:1920px){
+    .skinner-container{
+        background-position: left top;
+        background-size:100% auto;
+        background-repeat: no-repeat;
     }
-    #titleLeft{
-        left:-2%;
+    .bottom .content{
+        width:100%;
+        max-width:970px;
+        bottom:100px;
     }
-    #titleRight{
-        left:66%;
-        top:60%;
+    .bottom img{
+        width:30%;
+        aspect-ratio: 485/115;
+        left:10px;
     }
-     #titleLeftBox{
-        left:142px;
+    .bottom img:nth-child(2){
+        width:10%;
+        right:30px;
+        left:unset;
+        aspect-ratio: 131/89;
     }
 }
-/* ipad mini horizontal*/
-@media (min-width:1024px) and (max-width: 1279px) {
-    /* .skinner-bg{
-        background-size: auto 1080px;
-        background-position: 50% top;
-    } */
-    
-}
+
 .bounce-left {
 	animation: bounce-in-left .8s both;
 }
