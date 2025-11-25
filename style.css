@@ -31,7 +31,7 @@ body {
         "left   center  right"
         "bottom bottom  bottom";
     animation: fadeIn 1s ease-out forwards;
-    background-color:#000000;
+    background-color:#ffffff;
     background-image: url(bg.jpg);
     background-position: center top;
     background-size:auto 100%;
