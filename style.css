@@ -248,10 +248,10 @@ body {
   transform: skewX(-20deg);
   filter: blur(0.6px);
   pointer-events: none;
-  /* animation-name: ctaShimmerGap; */
+  animation-name: ctaShimmerGap;
   animation-duration: calc(var(--shine-move) + var(--shine-gap));
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 5
+  animation-iteration-count: infinite;
 
 }
 

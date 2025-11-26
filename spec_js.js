@@ -84,7 +84,12 @@ function startAnim() {
 }
 
 function startSideAnimate() {
-  const sideTl = gsap.timeline();
+  const sideTl = gsap.timeline({onComplete:function(){
+    setTimeout(() => {
+      document.querySelector(".panel .cta::before").style.opacity = 0;
+    }, 1000);
+    
+  }});
   sideTl.to(".panel.left",  { opacity: 1, duration: 0.5, ease: "power2.out" }, "-=3")
   .to(".panel.right", { opacity: 1, duration: 0.5, ease: "power2.out" }, "<")
   .set(".left .title",{ duration: .2, className: "pos-ab title bounce-left" },"+=.2")
@@ -93,11 +98,6 @@ function startSideAnimate() {
   .to(".right .price", { opacity: 1, duration: 0.5, ease: "power2.out" },"<")
   .to(".left .lockup", {opacity: 1, duration: 0.5, ease: "power2.out" })
   .to(".right .lockup", {opacity: 1, duration: 0.5, ease: "power2.out" },"<")
-  gsap.set(".panel .cta:before", {
-    css: {
-        animationName: "ctaShimmerGap", 
-    }
-  });
 }
 
 function topAnimate() {
