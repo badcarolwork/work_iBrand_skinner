@@ -341,9 +341,8 @@ body {
         height: 39px;
         font-size: 20px;
     }
-
 }
-@media (min-width:1500px) {
+@media (min-width:1200px) {
     .skinner-container {
         background-position: left -63px;
         background-size: 100% auto;
