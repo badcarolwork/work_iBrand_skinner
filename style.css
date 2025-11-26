@@ -447,13 +447,13 @@ body {
     .left .content .price {
         width: 36%;
         left: 49px;
-        bottom: 146px;
+        bottom: 174px;
     }
 
     .right .content .price {
-        width: 35%;
-        bottom: 177px;
-        left: 62px;
+        width: 33%;
+        bottom: 182px;
+        left: 135px;
     }
 
     .left .content .lockup,
@@ -465,19 +465,9 @@ body {
     }
 
     .panel .cta {
-        border-radius: 64px;
-        border: 1px solid #000;
-        background-color: rgba(255, 255, 255, 0.8);
-        color: #000;
-        width: 185px;
-        height: 46px;
-        font-size: 22px;
-        font-weight: bold;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        bottom: -10px;
+        width: 215px;
+        height: 53px;
+        font-size: 26px;
     }
 }
 

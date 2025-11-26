@@ -141,6 +141,7 @@ function getScrollbarWidth() {
 
 window.addEventListener("resize", updateSize); 
 let bgApplied = false; 
+
 window.addEventListener("message", function (event) {
   const message = event.data;
   if (message && message.data && typeof message.data.text === "string") {
@@ -157,9 +158,11 @@ window.addEventListener("message", function (event) {
 function showKPanelBg(state){
     if(state && !bgApplied){
       document.querySelector(".left .logo").style.display = "block";
+      console.log("show logo left")
     }else if(!state && bgApplied){
-        document.querySelector(".left .logo").style.display = "none";
+      document.querySelector(".left .logo").style.display = "none";
       bgApplied = false; // prevent reapplying
+      console.log("run hide logo left")
     }
 
 }
