@@ -354,6 +354,11 @@ body {
 }
  /* 125% view */
 @media (min-width:1590px) {
+    .skinner-container {
+        background-position: left -63px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
     .top {
         background-image: url(https://cdn.flashtalking.com/225135/5802213/top-bg.jpg);
         background-position: center top;
@@ -363,15 +368,26 @@ body {
         max-width: 1280px;
         background-position: center top;
     }
+    .top #logo{
+        right: 30px;
+        bottom: 20px;
+        max-width: 150px;
+    }
     .top #title{
         width: 320px;
         left: 100px;
+        top:50px;
     }
-    .skinner-container {
-        background-position: left -63px;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
+    .top #topLockup, #lockupBox{
+        width: 320px;
+        left: 104px;
+        top:125px;
     }
+    #topLockup #lockupBox img{
+        width: 94px;
+        left: 158px;
+    }
+   
     .left .logo {
         width: 58%;
         top: 6%;
@@ -428,7 +444,29 @@ body {
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
-
+    .top .content {
+        max-width: 1280px;
+        background-position: center top;
+    }
+    .top #logo{
+        right: 30px;
+        bottom: 20px;
+        max-width: 150px;
+    }
+    .top #title{
+        width: 320px;
+        left: 100px;
+        top:50px;
+    }
+    .top #topLockup, #lockupBox{
+        width: 320px;
+        left: 104px;
+        top:125px;
+    }
+    #topLockup #lockupBox img{
+        width: 94px;
+        left: 158px;
+    }
     .left .logo {
         width: 33%;
     }
