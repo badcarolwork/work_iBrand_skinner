@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+:root{
+  --prev-duration: 2.4s;
+  --shine-move: 1.6s;
+  --shine-gap: 1s;
+}
+
 .pos-ab {
     position: absolute;
 }
@@ -252,9 +258,10 @@ body {
   animation-duration: calc(var(--shine-move) + var(--shine-gap));
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-
 }
-
+.panel .cta.hide-shimmer::before {
+  opacity: 0;
+}
 
 @keyframes ctaShimmerGap {
   0%   { transform: translateX(0) skewX(-20deg); opacity: 0; }
