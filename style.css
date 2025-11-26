@@ -229,6 +229,50 @@ body {
     bottom: -10px;
 }
 
+.panel .cta::before {
+  /* same styles as above but no animation by default */
+  animation: none;
+  opacity: 0;
+}
+
+
+.panel .cta::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -60%;
+  width: 60%;
+  height: 160%;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 45%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.5) 55%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  filter: blur(0.6px);
+  pointer-events: none;
+
+  /* ✅ auto-start + repeat exactly 5 times */
+  animation-name: ctaShimmer;
+  animation-duration: 1.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5; /* run 5 times then stop */
+  animation-fill-mode: none; /* no persistent style after animation */
+}
+
+@keyframes ctaShimmer {
+  0%   { transform: translateX(0) skewX(-20deg); opacity: 0; }
+  10%  { opacity: 0.25; }
+  50%  { transform: translateX(280%) skewX(-20deg); opacity: 0.35; }
+  90%  { opacity: 0.2; }
+  100% { transform: translateX(320%) skewX(-20deg); opacity: 0; }
+}
+
+
+
 .right {
     grid-area: right;
     animation-delay: 0.9s;
