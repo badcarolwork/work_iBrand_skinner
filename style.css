@@ -361,7 +361,7 @@ body {
 /** above 1920 screen*/
 @media (min-width:1920px) {
     .skinner-container {
-        background-position: left -11px;
+        background-position: left -20px;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
@@ -399,15 +399,15 @@ body {
     }
 
     .left .content .price {
-        width: 40%;
-        left: 80px;
-        bottom: 132px;
+        width: 36%;
+        left: 49px;
+        bottom: 146px;
     }
 
     .right .content .price {
-        width: 50%;
-        bottom: 166px;
-        left: 69px;
+        width: 35%;
+        bottom: 177px;
+        left: 62px;
     }
 
     .left .content .lockup,
