@@ -175,9 +175,9 @@ body {
 .right .content {
     position: relative;
     width: 100%;
-    top: 140px;
-    height: 571px;
+    height: 720px;
     margin: auto;
+    top: 180px;
 }
 
 .left .content img,
@@ -200,9 +200,9 @@ body {
 }
 
 .right .content .price {
-    width: 50%;
-    bottom: 118px;
-    left: 30px;
+    width: 47%;
+    bottom: 142px;  
+    left: 69px;
 }
 
 .left .content .lockup,
@@ -218,9 +218,9 @@ body {
     border: 1px solid #000;
     background-color: #fff;
     color: #000;
-    width: 138px;
-    height: 39px;
-    font-size: 20px;
+    width: 185px;
+    height: 46px;
+    font-size: 22px;
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -281,7 +281,67 @@ body {
 }
 
 /* PC */
+/* 150% view */
+@media (min-width:1000px) {
+    .top {
+        background-image: url(top-bg.jpg);
+        background-position: center top;
+    }
+     .top .content {
+        max-width: 1280px;
+        background-position: center top;
+    }
 
+    .top #logo {
+        transform: scale(0.55);
+        opacity: 0;
+        aspect-ratio: 153/63;
+        right: 20px;
+        bottom: 20px;
+        max-width: 100px;
+    }
+    .top #title {
+        width: 320px;
+        left: 90px;
+        top: 53px;
+    }
+    .top #topLockup,
+    #lockupBox {
+        width: 330px;
+        left: 92px;
+        top: 127px;
+    }
+    #topLockup #lockupBox {
+        background-image: url(lookup-box.png);
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        opacity: 1;
+    }
+    #topLockup #lockupBox img {
+        width: 91px;
+        left: 166px;
+        transform: translate(0, 66px);
+    }
+    .center {
+        width: 1024px;
+    }
+
+    .left .content, .right .content{
+        top:140px;
+        height:571px;
+    }
+    .right .content .price{
+        width: 50%;
+        bottom: 118px;
+        left: 30px;
+    }
+    .panel .cta{
+        width: 138px;
+        height: 39px;
+        font-size: 20px;
+    }
+}
 @media (min-width:1200px) {
     .skinner-container {
         background-position: left -63px;
@@ -289,39 +349,6 @@ body {
         background-repeat: no-repeat;
     }
 
-    .left .logo {
-        width: 58%;
-        top: 6%;
-    }
-    .left .content,
-    .right .content {
-        height: 720px;
-        top: 180px;
-    }
-    .left .content img,
-    .right .content img {
-        width: 80%;
-    }
-    .left .content .price {
-        width: 52%;
-        left: 20px;
-        bottom: 128px;
-    }
-    .right .content .price {
-        width: 47%;
-        bottom: 142px;  
-        left: 69px;
-    }
-    .left .content .lockup,
-    .right .content .lockup {
-        bottom: 65px;
-        width: 80%;
-    }
-    .panel .cta {
-        width: 185px;
-        height: 46px;
-        font-size: 22px;
-    }
     .bottom .content {
         width: 100%;
         max-width: 970px;
