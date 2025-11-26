@@ -230,8 +230,8 @@ body {
     overflow:hidden;
 }
 
-.panel .cta::before {
-  content: "";
+.panel .cta::before {  
+    content: "";
   position: absolute;
   top: -30%;
   left: -60%;
@@ -248,23 +248,21 @@ body {
   transform: skewX(-20deg);
   filter: blur(0.6px);
   pointer-events: none;
-
-  /* ✅ auto-start + repeat exactly 5 times */
-  animation-name: ctaShimmer;
-  animation-duration: 1.6s;
+  animation-name: ctaShimmerGap;
+  animation-duration: calc(var(--shine-move) + var(--shine-gap));
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 5; /* run 5 times then stop */
-  animation-fill-mode: none; /* no persistent style after animation */
+  animation-iteration-count: 5
+
 }
 
-@keyframes ctaShimmer {
+
+@keyframes ctaShimmerGap {
   0%   { transform: translateX(0) skewX(-20deg); opacity: 0; }
   10%  { opacity: 0.25; }
   50%  { transform: translateX(280%) skewX(-20deg); opacity: 0.35; }
-  90%  { opacity: 0.2; }
+  60%  { transform: translateX(320%) skewX(-20deg); opacity: 0; }
   100% { transform: translateX(320%) skewX(-20deg); opacity: 0; }
 }
-
 
 
 .right {
