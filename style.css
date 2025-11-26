@@ -194,14 +194,14 @@ body {
 }
 
 .left .content .price {
-    width: 55%;
+    width: 52%;
     left: 20px;
-    bottom: 116px;
+    bottom: 128px;
 }
 
 .right .content .price {
     width: 47%;
-    bottom: 127px;  
+    bottom: 142px;  
     left: 69px;
 }
 
@@ -247,7 +247,7 @@ body {
     align-items: center;
     justify-content: center;
     animation-delay: 1.1s;
-    height: 1000px;
+    height: 1px;
     width: 100%;
     left: 0;
     right: 0;
@@ -281,13 +281,13 @@ body {
 }
 
 /* PC */
-@media (min-width:1024px) {
+/* 150% view */
+@media (min-width:1200px) {
     .top {
         background-image: url(top-bg.jpg);
         background-position: center top;
     }
-
-    .top .content {
+     .top .content {
         max-width: 1280px;
         background-position: center top;
     }
@@ -300,20 +300,17 @@ body {
         bottom: 20px;
         max-width: 100px;
     }
-
     .top #title {
         width: 320px;
         left: 90px;
         top: 53px;
     }
-
     .top #topLockup,
     #lockupBox {
         width: 330px;
         left: 92px;
         top: 127px;
     }
-
     #topLockup #lockupBox {
         background-image: url(lookup-box.png);
         left: 0;
@@ -321,17 +318,32 @@ body {
         overflow: hidden;
         opacity: 1;
     }
-
     #topLockup #lockupBox img {
         width: 91px;
         left: 166px;
         transform: translate(0, 66px);
     }
-
     .center {
         width: 1024px;
     }
 
+    .left .content, .right .content{
+        top:140px;
+        height:571px;
+    }
+    .right .content .price{
+        width: 50%;
+        bottom: 118px;
+        left: 30px;
+    }
+    .panel .cta{
+        width: 138px;
+        height: 39px;
+        font-size: 20px;
+    }
+
+}
+@media (min-width:1500px) {
     .skinner-container {
         background-position: left -63px;
         background-size: 100% auto;
@@ -367,12 +379,7 @@ body {
     }
 
     .left .logo {
-        width: 58%;
-        top: 6%;
-        display: none;
-        left: 0;
-        right: 0;
-        margin: auto;
+        width: 33%;
     }
 
     .left .content,
