@@ -36,7 +36,7 @@ body {
         "bottom bottom  bottom";
     animation: fadeIn 1s ease-out forwards;
     background-color: #ffffff;
-    background-image: url(bg.jpg);
+    background-image: url(https://cdn.flashtalking.com/225135/5802213/bg.jpg);
     /* background-image: url(https://badcarolwork.github.io/work_iBrand_skinner/bg.jpg); */
     background-position: left -85px;
     background-size:100% auto;
@@ -60,7 +60,7 @@ body {
     font-weight: bold;
     padding: 0;
     z-index: 10;
-    background-image: url(mobile-top-bg.jpg);
+    background-image: url(https://cdn.flashtalking.com/225135/5802213/mobile-top-bg.jpg);
     background-size: auto 250px;
     background-position: center top;
     background-repeat: no-repeat;
@@ -97,14 +97,14 @@ body {
     aspect-ratio: 340/70;
     left: 10px;
     top: 125px;
-    background-image: url(lookup-text.png);
+    background-image: url(https://cdn.flashtalking.com/225135/5802213/lookup-text.png);
     background-repeat: no-repeat;
     opacity: 0;
     background-size: auto 100%;
 }
 
 #topLockup #lockupBox {
-    background-image: url(lookup-box.png);
+    background-image: url(https://cdn.flashtalking.com/225135/5802213/lookup-box.png);
     left: 0;
     top: 0;
     overflow: hidden;
@@ -284,7 +284,7 @@ body {
 /* 150% view */
 @media (min-width:1000px) and (max-width:1589px){
     .top {
-        background-image: url(top-bg.jpg);
+        background-image: url(https://cdn.flashtalking.com/225135/5802213/top-bg.jpg);
         background-position: center top;
     }
 
@@ -316,7 +316,7 @@ body {
     }
 
     #topLockup #lockupBox {
-        background-image: url(lookup-box.png);
+        background-image: url(https://cdn.flashtalking.com/225135/5802213/lookup-box.png);
         left: 0;
         top: 0;
         overflow: hidden;
@@ -355,7 +355,7 @@ body {
  /* 125% view */
 @media (min-width:1590px) {
     .top {
-        background-image: url(top-bg.jpg);
+        background-image: url(https://cdn.flashtalking.com/225135/5802213/top-bg.jpg);
         background-position: center top;
     }
 
@@ -364,7 +364,8 @@ body {
         background-position: center top;
     }
     .top #title{
-        width:300px;
+        width: 320px;
+        left: 100px;
     }
     .skinner-container {
         background-position: left -63px;
