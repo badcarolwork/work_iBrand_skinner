@@ -227,14 +227,8 @@ body {
     right: 0;
     margin: auto;
     bottom: -10px;
+    overflow:hidden;
 }
-
-.panel .cta::before {
-  /* same styles as above but no animation by default */
-  animation: none;
-  opacity: 0;
-}
-
 
 .panel .cta::before {
   content: "";
