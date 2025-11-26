@@ -84,11 +84,12 @@ function startAnim() {
 }
 
 function startSideAnimate() {
-  const sideTl = gsap.timeline({onComplete:function(){
-    setTimeout(() => {
-      document.querySelector(".panel .cta").classList.add("hide-shimmer");
-    }, 1000);
-  }});
+  const sideTl = gsap.timeline();
+  // const sideTl = gsap.timeline({onComplete:function(){
+  //   setTimeout(() => {
+  //     document.querySelector(".panel .cta").classList.add("hide-shimmer");
+  //   }, 7000);
+  // }});
   sideTl.to(".panel.left",  { opacity: 1, duration: 0.5, ease: "power2.out" }, "-=3")
   .to(".panel.right", { opacity: 1, duration: 0.5, ease: "power2.out" }, "<")
   .set(".left .title",{ duration: .2, className: "pos-ab title bounce-left" },"+=.2")
