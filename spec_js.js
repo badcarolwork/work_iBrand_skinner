@@ -93,6 +93,11 @@ function startSideAnimate() {
   .to(".right .price", { opacity: 1, duration: 0.5, ease: "power2.out" },"<")
   .to(".left .lockup", {opacity: 1, duration: 0.5, ease: "power2.out" })
   .to(".right .lockup", {opacity: 1, duration: 0.5, ease: "power2.out" },"<")
+  gsap.set(".panel .cta:before", {
+    css: {
+        animationName: "ctaShimmerGap", 
+    }
+  });
 }
 
 function topAnimate() {
