@@ -354,12 +354,20 @@ body {
 }
 
 @media (min-width:1590px) {
+    .top {
+        background-image: url(top-bg.jpg);
+        background-position: center top;
+    }
+
+    .top .content {
+        max-width: 1280px;
+        background-position: center top;
+    }
     .skinner-container {
         background-position: left -63px;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
-
     .left .logo {
         width: 58%;
         top: 6%;
