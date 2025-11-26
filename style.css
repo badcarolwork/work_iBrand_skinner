@@ -248,7 +248,7 @@ body {
     justify-content: center;
     animation-delay: 1.1s;
     height: 1px;
-    width: 1280px;
+    width: 1024px;
     left: 0;
     right: 0;
     margin: auto;
@@ -362,6 +362,9 @@ body {
     .top .content {
         max-width: 1280px;
         background-position: center top;
+    }
+    .top #title{
+        width:300px;
     }
     .skinner-container {
         background-position: left -63px;
