@@ -282,7 +282,7 @@ body {
 
 /* PC */
 /* 150% view */
-@media (min-width:1000px) {
+@media (min-width:1000px) and (max-width:1499px){
     .top {
         background-image: url(top-bg.jpg);
         background-position: center top;
@@ -342,7 +342,7 @@ body {
         font-size: 20px;
     }
 }
-@media (min-width:1200px) {
+@media (min-width:1500px) {
     .skinner-container {
         background-position: left -63px;
         background-size: 100% auto;
