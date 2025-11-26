@@ -86,9 +86,8 @@ function startAnim() {
 function startSideAnimate() {
   const sideTl = gsap.timeline({onComplete:function(){
     setTimeout(() => {
-      document.querySelector(".panel .cta::before").style.opacity = 0;
+      document.querySelector(".panel .cta").classList.add("hide-shimmer");
     }, 1000);
-    
   }});
   sideTl.to(".panel.left",  { opacity: 1, duration: 0.5, ease: "power2.out" }, "-=3")
   .to(".panel.right", { opacity: 1, duration: 0.5, ease: "power2.out" }, "<")
