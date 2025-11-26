@@ -282,9 +282,6 @@ body {
 
 /* PC */
 @media (min-width:1024px) {
-    .skinner-container{
-        background-position: left -63px;
-    }
     .top {
         background-image: url(top-bg.jpg);
         background-position: center top;
@@ -336,7 +333,7 @@ body {
     }
 
     .skinner-container {
-        background-position: left top;
+        background-position: left -63px;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
