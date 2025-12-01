@@ -85,11 +85,6 @@ function startAnim() {
 
 function startSideAnimate() {
   const sideTl = gsap.timeline();
-  // const sideTl = gsap.timeline({onComplete:function(){
-  //   setTimeout(() => {
-  //     document.querySelector(".panel .cta").classList.add("hide-shimmer");
-  //   }, 7000);
-  // }});
   sideTl.to(".panel.left",  { opacity: 1, duration: 0.5, ease: "power2.out" }, "-=3")
   .to(".panel.right", { opacity: 1, duration: 0.5, ease: "power2.out" }, "<")
   .set(".left .title",{ duration: .2, className: "pos-ab title bounce-left" },"+=.2")
@@ -147,27 +142,27 @@ function getScrollbarWidth() {
 window.addEventListener("resize", updateSize); 
 let bgApplied = false; 
 
-window.addEventListener("message", function (event) {
-  const message = event.data;
-  if (message && message.data && typeof message.data.text === "string") {
-    if(message.data.text === "kscrollReveal"){
-      showKPanelBg(true); 
-    }
-  if(message.data.text === "kscrollTop"){
-      showKPanelBg(false);
-    }
-  }
-});
+// window.addEventListener("message", function (event) {
+//   const message = event.data;
+//   if (message && message.data && typeof message.data.text === "string") {
+//     if(message.data.text === "kscrollReveal"){
+//       showKPanelBg(true); 
+//     }
+//   if(message.data.text === "kscrollTop"){
+//       showKPanelBg(false);
+//     }
+//   }
+// });
 
 
-function showKPanelBg(state){
-    if(state && !bgApplied){
-      document.querySelector(".left .logo").style.display = "block";
-      console.log("show logo left")
-    }else if(!state && bgApplied){
-      document.querySelector(".left .logo").style.display = "none";
-      bgApplied = false; // prevent reapplying
-      console.log("run hide logo left")
-    }
+// function showKPanelBg(state){
+//     if(state && !bgApplied){
+//       document.querySelector(".left .logo").style.display = "block";
+//       console.log("show logo left")
+//     }else if(!state && bgApplied){
+//       document.querySelector(".left .logo").style.display = "none";
+//       bgApplied = false; // prevent reapplying
+//       console.log("run hide logo left")
+//     }
 
-}
+// }

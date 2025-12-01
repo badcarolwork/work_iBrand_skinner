@@ -22,6 +22,10 @@ body {
     /* overflow-x: hidden; */
     background-color: #ffffff;
 }
+body{
+    zoom: 80%;
+    height: auto;
+}
 
 .o {
     opacity: 0;
@@ -42,8 +46,7 @@ body {
         "bottom bottom  bottom";
     animation: fadeIn 1s ease-out forwards;
     background-color: #ffffff;
-    background-image: url(https://cdn.flashtalking.com/225135/5802213/bg.jpg);
-    /* background-image: url(https://badcarolwork.github.io/work_iBrand_skinner/bg.jpg); */
+    background-image: url(https://cdn.flashtalking.com/225135/5820039/bg.jpg);
     background-position: left -85px;
     background-size:100% auto;
     background-repeat: no-repeat;
@@ -54,6 +57,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     text-align: center;
+    cursor: pointer;
 }
 
 .top {
@@ -66,7 +70,7 @@ body {
     font-weight: bold;
     padding: 0;
     z-index: 10;
-    background-image: url(https://cdn.flashtalking.com/225135/5802213/mobile-top-bg.jpg);
+    background-image: url(https://cdn.flashtalking.com/225135/5820039/mobile-top-bg.jpg);
     background-size: auto 250px;
     background-position: center top;
     background-repeat: no-repeat;
@@ -103,14 +107,14 @@ body {
     aspect-ratio: 340/70;
     left: 10px;
     top: 125px;
-    background-image: url(https://cdn.flashtalking.com/225135/5802213/lookup-text.png);
+    background-image: url(https://cdn.flashtalking.com/225135/5820039/lookup-text.png);
     background-repeat: no-repeat;
     opacity: 0;
     background-size: auto 100%;
 }
 
 #topLockup #lockupBox {
-    background-image: url(https://cdn.flashtalking.com/225135/5802213/lookup-box.png);
+    background-image: url(https://cdn.flashtalking.com/225135/5820039/lookup-box.png);
     left: 0;
     top: 0;
     overflow: hidden;
@@ -293,6 +297,7 @@ body {
     animation-delay: 1.1s;
     height: 1px;
     width: 1024px;
+    /* max-width: 1280px; */
     left: 0;
     right: 0;
     margin: auto;
@@ -328,7 +333,7 @@ body {
 /* 150% view */
 @media (min-width:1000px) and (max-width:1589px){
     .top {
-        background-image: url(https://cdn.flashtalking.com/225135/5802213/top-bg.jpg);
+        background-image: url(https://cdn.flashtalking.com/225135/5820039/top-bg.jpg);
         background-position: center top;
     }
 
@@ -360,7 +365,7 @@ body {
     }
 
     #topLockup #lockupBox {
-        background-image: url(https://cdn.flashtalking.com/225135/5802213/lookup-box.png);
+        background-image: url(https://cdn.flashtalking.com/225135/5820039/lookup-box.png);
         left: 0;
         top: 0;
         overflow: hidden;
@@ -394,6 +399,13 @@ body {
         height: 39px;
         font-size: 20px;
     }
+    .bottom img{
+        width:40%;
+    }
+    .bottom img:nth-child(2){
+        width:15%;
+        left:30px;
+    }
 
 }
  /* 125% view */
@@ -404,7 +416,7 @@ body {
         background-repeat: no-repeat;
     }
     .top {
-        background-image: url(https://cdn.flashtalking.com/225135/5802213/top-bg.jpg);
+        background-image: url(https://cdn.flashtalking.com/225135/5820039/top-bg.jpg);
         background-position: center top;
     }
 
