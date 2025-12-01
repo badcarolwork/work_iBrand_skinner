@@ -22,10 +22,6 @@ body {
     /* overflow-x: hidden; */
     background-color: #ffffff;
 }
-body{
-    zoom: 80%;
-    height: auto;
-}
 
 .o {
     opacity: 0;
@@ -411,7 +407,7 @@ body{
  /* 125% view */
 @media (min-width:1590px) {
     .skinner-container {
-        background-position: left -63px;
+        background-position: left 0;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
@@ -451,19 +447,19 @@ body{
 
     .left .content,
     .right .content {
-        height: 720px;
-        top: 180px;
+        height: 800px;
+        top: 80px;
     }
 
     .left .content .price {
         width: 52%;
-        left: 20px;
-        bottom: 128px;
+        left: 91px;
+        bottom: 148px;
     }
 
     .right .content .price {
         width: 47%;
-        bottom: 142px;
+        bottom: 178px;
         left: 69px;
     }
 
