@@ -43,7 +43,7 @@ body {
     animation: fadeIn 1s ease-out forwards;
     background-color: #ffffff;
     background-image: url(https://cdn.flashtalking.com/225135/5820039/bg.jpg);
-    background-position: left -85px;
+    background-position: left 0;
     background-size:100% auto;
     background-repeat: no-repeat;
     opacity: 0;
@@ -200,9 +200,9 @@ body {
 }
 
 .left .content .price {
-    width: 52%;
+    width: 74%;
     left: 20px;
-    bottom: 128px;
+    bottom: 155px;
 }
 
 .right .content .price {
@@ -215,8 +215,8 @@ body {
 .right .content .lockup {
     left: 0;
     right: 0;
-    bottom: 65px;
-    width: 80%;
+    bottom: 100px;
+    width: 95%;
 }
 
 .panel .cta {
@@ -232,7 +232,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: -10px;
+    bottom: -30px;
     overflow:hidden;
 }
 
@@ -380,20 +380,21 @@ body {
 
     .left .content,
     .right .content {
-        top: 140px;
-        height: 571px;
+        top: 100px;
+        height: 650px;
     }
 
     .right .content .price {
-        width: 50%;
-        bottom: 118px;
-        left: 30px;
+        width: 70%;
+        bottom: 169px;
+        left: 27px;
     }
 
     .panel .cta {
-        width: 138px;
+        width: 127px;
         height: 39px;
-        font-size: 20px;
+        font-size: 17px;
+        bottom: 33px;
     }
     .bottom img{
         width:40%;
@@ -492,7 +493,7 @@ body {
 /** above 1920 screen*/
 @media (min-width:1920px) {
     .skinner-container {
-        background-position: left -20px;
+        background-position: left 52px;
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
@@ -529,7 +530,7 @@ body {
         width: 100%;
         height: 1000px;
         margin: auto;
-        top: 180px;
+        top: 150px;
     }
 
     .left .content img,
@@ -543,27 +544,27 @@ body {
     .right .content .title {
         left: 0;
         right: 0;
-        top: 55px;
+        top: -30px;
     }
 
     .left .content .price {
         width: 36%;
-        left: 49px;
+        left: 110px;
         bottom: 174px;
     }
 
     .right .content .price {
         width: 33%;
-        bottom: 182px;
-        left: 135px;
+        bottom: 221px;
+        left: 249px;
     }
 
     .left .content .lockup,
     .right .content .lockup {
         left: 0;
         right: 0;
-        bottom: 75px;
-        width: 70%;
+        bottom: 64px;
+        width: 75%;
     }
 
     .panel .cta {
