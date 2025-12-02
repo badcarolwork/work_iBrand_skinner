@@ -90,9 +90,12 @@ body {
 }
 
 .top #title {
-    width: 214px;
+    /* width: 214px;
     left: 10px;
-    top: 67px;
+    top: 67px; */
+    width: 165px;
+    left: 10px;
+    top: 80px;
     opacity: 0;
 }
 
