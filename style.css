@@ -147,6 +147,7 @@ body {
 }
 
 .bottom img {
+    display:none;
     width: 50%;
     aspect-ratio: 485/115;
     left: 10px;
@@ -397,14 +398,14 @@ body {
         font-size: 17px;
         bottom: 33px;
     }
-    .bottom img{
+    /* .bottom img{
         width:40%;
         left:0;
     }
     .bottom img:nth-child(2){
         width:15%;
         right:30px;
-    }
+    } */
 
 }
  /* 125% view */
@@ -483,7 +484,7 @@ body {
         top:80px;
     }
 
-    .bottom img {
+    /* .bottom img {
         width: 30%;
         aspect-ratio: 485/115;
         left: 10px;
@@ -494,7 +495,7 @@ body {
         right: 30px;
         left: unset;
         aspect-ratio: 131/89;
-    }
+    } */
 }
 
 /** above 1920 screen*/
