@@ -463,6 +463,10 @@ body {
         bottom: 178px;
         left: 69px;
     }
+    .left .content .lockup, .right .content .lockup{
+        width:93%;
+        bottom: 60px;
+    }
 
     .panel .cta {
         width: 185px;
