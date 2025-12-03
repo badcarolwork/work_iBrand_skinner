@@ -121,9 +121,9 @@ body {
 }
 
 #topLockup #lockupBox img {
-    width: 62px;
+    width: 60px;
     height: auto;
-    left: 97px;
+    left: 96px;
     opacity: 0;
     transform: translate(0px, 43px);
     /* top: 24px; */
