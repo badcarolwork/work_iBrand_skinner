@@ -102,7 +102,7 @@ function topAnimate() {
     yIn = 37;
     yOut = 11;
   } else {
-    yIn = 24;
+    yIn = 22;
     yOut = 11;
   }
   const topTl = gsap.timeline();

@@ -93,19 +93,19 @@ body {
     /* width: 214px;
     left: 10px;
     top: 67px; */
-    width: 165px;
+    width: 185px;
     left: 10px;
-    top: 80px;
+    top: 149px;
     opacity: 0;
 }
 
 .top #topLockup,
 #lockupBox {
     position: relative;
-    width: 218px;
-    aspect-ratio: 340/70;
+    width: 198px;
     left: 10px;
-    top: 125px;
+    top: 191px;    
+    aspect-ratio: 340 / 70;
     background-image: url(https://cdn.flashtalking.com/225135/5820039/lookup-text.png);
     background-repeat: no-repeat;
     opacity: 0;
