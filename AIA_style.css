@@ -42,7 +42,7 @@ body {
         "bottom bottom  bottom";
     animation: fadeIn 1s ease-out forwards;
     background-color: #ffffff;
-    background-image: url(bg.jpg);
+    background-image: url('https://api.flashtalking.net/lcrp/assetmanager/232311/5903108/bg.jpg');
     background-position: left 0;
     background-size:100% 100%;
     background-repeat: no-repeat;
@@ -118,37 +118,6 @@ body {
     opacity: 0;
 }
 
-.top #topLockup,
-#lockupBox {
-    position: relative;
-    width: 198px;
-    left: 10px;
-    top: 191px;    
-    aspect-ratio: 340 / 70;
-    background-image: url(lookup-text.png);
-    background-repeat: no-repeat;
-    opacity: 0;
-    background-size: auto 100%;
-}
-
-#topLockup #lockupBox {
-    background-image: url(lookup-box.png);
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    opacity: 1;
-}
-
-#topLockup #lockupBox img {
-    width: 59px;
-    height: auto;
-    left:98px;
-    opacity: 0;
-    transform: translate(0px, 43px);
-    /* top: 24px; */
-}
-
-
 .bottom {
     grid-area: bottom;
     animation-delay: 0.5s;
@@ -169,19 +138,6 @@ body {
     background-color: #e25a60;
 }
 
-/* .bottom img {
-    display:none;
-    width: 50%;
-    aspect-ratio: 485/115;
-    left: 10px;
-}
-
-.bottom img:nth-child(2) {
-    width: 20%;
-    right: 20px;
-    left: unset;
-    aspect-ratio: 131/89;
-} */
 #bottom-text{
     left: 100px;
     top: 30px;
