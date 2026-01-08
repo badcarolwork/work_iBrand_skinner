@@ -699,7 +699,7 @@ body {
 
     .left .content .lockup{
         left: unset;
-        right: 0;
+        right: 29px;
     }
 
     .right .content .lockup {
