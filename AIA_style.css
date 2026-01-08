@@ -696,15 +696,17 @@ body {
         right: 0;
         /* bottom: 115px; */
         width: 75%;
+        max-width:unset;
     }
 
     .left .content .lockup{
-        left: 0;
+        left: unset;
         right: 0;
     }
 
     .right .content .lockup {
         right: 0;
+        left:unset;
     }
 
     .panel .cta {
