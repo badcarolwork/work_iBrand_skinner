@@ -140,9 +140,8 @@ body {
 
 #bottom-text{
     left: 100px;
-    top: 30px;
-    max-width: 487px;
-    
+    top: 22px;
+    max-width: 475px;
 }
 
 #bottom-image{
@@ -601,9 +600,12 @@ body {
 
     }
     .left .content .lockup, .right .content .lockup{
-        width:100%;        
+        width:93%;        
         max-width:unset;
         bottom:245px;
+    }
+    .left .content .lockup{
+        left:30px;
     }
 
     .panel .cta {
