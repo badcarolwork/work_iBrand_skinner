@@ -84,7 +84,9 @@ function startSideAnimate() {
   const sideTl = gsap.timeline();
   sideTl.to(".panel.left",  { opacity: 1, duration: 0.5, ease: "power2.out" }, "-=3")
   .to(".panel.right", { opacity: 1, duration: 0.5, ease: "power2.out" }, "<")
-  .to(".left .left-text",{opacity:1,duration:.5,ease: "power2.out"})
+  .to(".left .left-char",{opacity:1,duration:.5,ease: "power2.out"})
+  .to(".left .left-text",{opacity:1,duration:.5,ease: "power2.out"},"<")
+  .to(".right .right-char",{opacity:1,duration:.5,ease: "power2.out"},"<")
   .to(".right .right-text",{opacity:1,duration:.5,ease: "power2.out"},"<")
 }
 
