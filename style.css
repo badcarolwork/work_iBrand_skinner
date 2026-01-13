@@ -453,7 +453,7 @@ body {
 /* 125% view */
 /* @media (min-width:1600px) { */
 /* @media (min-width: 1600px) and (max-width: 1920px) { */
-@media (min-width: 1600px) and (max-width: 2879px) {
+@media (min-width: 1600px) and (max-width: 2379px) {
   .skinner-container {
     background-position: left 0;
     background-size: auto 100%;
@@ -545,7 +545,7 @@ body {
 
 /** above 1920 screen*/
 /* @media (min-width:1921px) { */
-@media (min-width: 2800px) {
+@media (min-width: 2380px) {
   .skinner-container {
     background-position: left 0;
     background-size: 100% auto;
