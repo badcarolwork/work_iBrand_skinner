@@ -431,22 +431,34 @@ body {
   }
 
   .panel .cta {
-    width: 200px;
+    width: 86%;
     padding-top: 10px;
-    height: 45px;
+    height: 57px;
+    font-size: 4px;
+    text-wrap: auto;
   }
 
-  .left .content img,
-  .right .content img {
-    width: 90%;
-    opacity: 0;
-    left: 0;
-    bottom: 0;
+  .left .content .left-char,
+  .right .content .right-char {
+    right: unset;
+    left: -40%;
+    height: 80%;
+    width: unset;
+  }
+  .left .content .left-text,
+  .right .content .right-text {
+    right: unset;
+    left: -40%;
+    height: 80%;
+    width: unset;
   }
 
   .right .content img {
     right: 0;
     left: unset;
+  }
+  .center{
+    width:1280px;
   }
 }
 
