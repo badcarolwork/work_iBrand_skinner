@@ -438,7 +438,7 @@ body {
     text-wrap: auto;
     left:-34px;
   }
-  .panel .right .cta {
+  .panel.right .cta {
     left:34px;
   }
 
@@ -563,6 +563,19 @@ body {
 
   .bottom #bottom-image {
     width: 500px;
+  }
+}
+
+/*** for screen shorter with 125% width**/
+@media (min-width: 1600px) and (max-width: 2379px) and (max-height: 920px) {
+  .left .content .left-text,
+  .right .content .right-text{
+    top: 180px;
+    bottom: unset;
+    width: 70%;
+    right: 0;
+    left:0;
+    margin: auto;
   }
 }
 
