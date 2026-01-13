@@ -471,7 +471,7 @@ body {
   }
 
   .top .content {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     left: 0;
     right: 0;
@@ -484,7 +484,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 10%;
+    left: 5%;
     text-align: center;
   }
 
@@ -504,7 +504,7 @@ body {
   .top #char {
     width: auto;
     height: 90%;
-    right: 8%;
+    right: 10%;
   }
 
   .top #astro {
@@ -576,7 +576,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 10%;
+    left: 6%;
     text-align: center;
   }
 
@@ -596,7 +596,7 @@ body {
   .top #char {
     width: auto;
     height: 90%;
-    right: 8%;
+    right: 10%;
   }
 
   .top #astro {
