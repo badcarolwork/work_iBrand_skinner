@@ -434,25 +434,34 @@ body {
     width: 86%;
     padding-top: 10px;
     height: 57px;
-    font-size: 4px;
+    font-size: 16px;
     text-wrap: auto;
+    left:-34px;
+  }
+  .panel .right .cta {
+    left:34px;
   }
 
   .left .content .left-char,
   .right .content .right-char {
     right: unset;
-    left: -40%;
+    left: -33%;
     height: 80%;
     width: unset;
+    bottom: 0;
   }
   .left .content .left-text,
   .right .content .right-text {
     right: unset;
-    left: -40%;
-    height: 80%;
-    width: unset;
+    left: -10px;
+    height: auto;
+    width: 92%;
+    top: 222px;
+    bottom: unset;
   }
-
+  .right .content .right-text {
+    left:24px;
+  }
   .right .content img {
     right: 0;
     left: unset;
