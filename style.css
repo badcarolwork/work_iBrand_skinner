@@ -563,7 +563,7 @@ body {
   }
 
   .top .content {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     left: 0;
     right: 0;
@@ -619,7 +619,7 @@ body {
   }
   .left .content img,
   .right .content img {
-    width: 100%;
+    width: 72%;
     opacity: 0;
     left: 0;
     bottom: 0;
