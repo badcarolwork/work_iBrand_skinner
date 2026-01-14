@@ -321,7 +321,7 @@ body {
   }
 }
 /**** mobile in weird width *****/
-@media (min-width: 471px) and (max-width: 1023px) {
+@media (min-width: 471px) and (max-width: 650px) {
   .panel.left, .panel.right {
     display: none;
   }
@@ -346,7 +346,7 @@ body {
 /* PC */
 /* 150% view */
 /* @media (min-width:1000px) and (max-width:1589px){ */
-@media (min-width: 1024px) and (max-width: 1599px) {
+@media (min-width: 651px) and (max-width: 1599px) {
   .skinner-container {
     background-position: left 0;
     background-size: auto 100%;
