@@ -299,7 +299,7 @@ body {
 
 
 /* Responsive Behavior */
-@media (max-width: 495px) {
+@media (max-width: 470px) {
   .panel.left,
   .panel.right {
     display: none;
@@ -320,10 +320,9 @@ body {
       "bottom";
   }
 }
-/** mobile in weird width *****/
+/**** mobile in weird width *****/
 @media (min-width: 471px) and (max-width: 1023px) {
-  .panel.left,
-  .panel.right {
+  .panel.left, .panel.right {
     display: none;
   }
   .top #char{
@@ -645,6 +644,7 @@ body {
   .left .content img,
   .right .content img {
     width: 94%;
+    max-width:580px;
     opacity: 0;
     left: 0;
     bottom: 0;
@@ -653,6 +653,7 @@ body {
   .left .content .left-text,
   .right .content .right-text {
     width: 80%;
+    max-width:490px;
     top: 165px;
     bottom: unset;
     margin: auto;
