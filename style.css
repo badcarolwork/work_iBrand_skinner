@@ -666,11 +666,6 @@ body {
     right: 0;
   }
 
-  .right .content img {
-    right: 0;
-    left: unset;
-  }
-
   .bottom #bottom-image {
     width: 700px;
   }
