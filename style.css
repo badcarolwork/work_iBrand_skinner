@@ -83,6 +83,17 @@ body {
   padding: 0;
 }
 
+.top #topLeft {
+  width: 50%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 10%;
+  text-align: center;
+}
+
 .top #char {
   width: 64%;
   height: auto;
@@ -286,15 +297,9 @@ body {
   top: 250px;
 }
 
-/* @media (max-height: 300px) {
-    .panel.bottom{
-        display: none;
-    }
-} */
 
 /* Responsive Behavior */
 @media (max-width: 495px) {
-
   .panel.left,
   .panel.right {
     display: none;
@@ -305,55 +310,7 @@ body {
   }
 }
 
-/* @media (min-width: 495px) and (max-width: 768px) {
-     .center{
-        display:none;
-    }
-    .panel.left, .panel.right {
-        display: none;
-    }
-    .top{
-        height: 300px;
-        background-size: auto 300px;
-    }
-    .top #logo{
-        width: 268px;
-        max-width: 268px;
-    }
-    .top #title {
-        width: 300px;
-        max-width: 390px;
-        top: 105px;
-        left: 40px;
-        opacity: 0;
-    }
-    .top #mobileCta{
-        opacity: 1;
-    }
-    .top #mixLogo{
-        opacity: 1;
-    }
-    .top #product {
-        width: 75%;
-        height: auto;
-        top: 10px;
-        right: -35%;
-    }
-
-    #bottom-text{
-        top: 30px;
-        left: 25px;
-        width: 350px;
-    }
-
-    #bottom-image{
-        width: 300px;
-        top: 30px;
-        right: 25px;
-    }
-} */
-
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .skinner-container {
     grid-template-columns: 1fr;
     grid-template-rows: 250px 1fr auto;
@@ -363,15 +320,35 @@ body {
       "bottom";
   }
 }
+/** mobile in weird width *****/
+@media (min-width: 471px) and (max-width: 1023px) {
+  .panel.left,
+  .panel.right {
+    display: none;
+  }
+  .top #char{
+    width: 25%;
+    right: 20%
+  }
+  .top #topLeft{
+    width:41%;
+    left: 15%;
+  }
+  .top #astro{
+    width: 10%;
+    top: 5%;
+    right: 3%;
+  }
+}
 
 /* PC */
 /* 150% view */
 /* @media (min-width:1000px) and (max-width:1589px){ */
-@media (min-width: 1300px) and (max-width: 1599px) {
+@media (min-width: 1024px) and (max-width: 1599px) {
   .skinner-container {
     background-position: left 0;
     background-size: auto 100%;
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
   }
 
   .top #mobile.logo {
@@ -436,10 +413,11 @@ body {
     height: 57px;
     font-size: 16px;
     text-wrap: auto;
-    left:-34px;
+    left: -34px;
   }
+
   .panel.right .cta {
-    left:34px;
+    left: 34px;
   }
 
   .left .content .left-char,
@@ -450,6 +428,7 @@ body {
     width: unset;
     bottom: 0;
   }
+
   .left .content .left-text,
   .right .content .right-text {
     right: unset;
@@ -459,9 +438,11 @@ body {
     top: 222px;
     bottom: unset;
   }
+
   .right .content .right-text {
-    left:24px;
+    left: 24px;
   }
+
   .right .content img {
     right: 0;
     left: unset;
@@ -538,10 +519,11 @@ body {
     width: 200px;
     padding-top: 10px;
     height: 45px;
-    left:-12%;
+    left: -12%;
   }
-  .right .content .cta{
-    left:15%;
+
+  .right .content .cta {
+    left: 15%;
   }
 
   .left .content img,
@@ -551,11 +533,13 @@ body {
     left: 0;
     bottom: 0;
   }
+
   .left .content .left-text,
   .right .content .right-text {
     top: 200px;
     bottom: unset;
   }
+
   .right .content img {
     right: 0;
     left: unset;
@@ -566,15 +550,16 @@ body {
   }
 }
 
-/*** for screen shorter with 125% width**/
+/*** for screen shorter with 125% width ***/
 @media (min-width: 1600px) and (max-width: 2379px) and (max-height: 920px) {
+
   .left .content .left-text,
-  .right .content .right-text{
+  .right .content .right-text {
     top: 180px;
     bottom: unset;
     width: 70%;
     right: 0;
-    left:0;
+    left: 0;
     margin: auto;
   }
 }
@@ -588,7 +573,7 @@ body {
     background-repeat: repeat-x;
   }
 
- .top #mobile.logo {
+  .top #mobile.logo {
     display: none;
   }
 
@@ -652,9 +637,11 @@ body {
     font-size: 24px;
     bottom: 80px;
   }
-  .right .content .cta{
-    left:15%;
+
+  .right .content .cta {
+    left: 15%;
   }
+
   .left .content img,
   .right .content img {
     width: 94%;
@@ -662,6 +649,7 @@ body {
     left: 0;
     bottom: 0;
   }
+
   .left .content .left-text,
   .right .content .right-text {
     width: 80%;
@@ -671,10 +659,12 @@ body {
     left: 0;
     right: 0;
   }
+
   .right .content img {
     right: 0;
     left: unset;
   }
+
   .bottom #bottom-image {
     width: 700px;
   }
