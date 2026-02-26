@@ -232,7 +232,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 200px;
+    bottom: 250px;
     overflow:hidden;
 }
 
@@ -653,9 +653,10 @@ body {
         text-align: center;
         left:0;
         right:0;
+        position: relative;
     }
     .countdown-box .small{
-        top:165px;
+        top:150px;
         display:flex;
         justify-items: center;
         justify-content: space-around;
@@ -667,7 +668,7 @@ body {
         margin:auto;
         left:0;
         right:0;
-        top:100px;
+        top:120px;
         font-size:1.2rem;
         font-weight:bold;
     }
@@ -704,7 +705,7 @@ body {
         font-size:3rem;
     }
     .date{
-        width: 70%;
+        width: 50%;
         min-width: 50px;
         min-height: 50px;
         background-image: url(datebg.png);
@@ -725,8 +726,8 @@ body {
     }
     
     .panel.right .icon{
-        width:80%;
-        max-width:120px;
+        width: 90%;
+        max-width: 200px;
         margin:auto;
         left:0;
         right:0;
@@ -735,10 +736,10 @@ body {
         top:245px;
     }
     .panel.right #icon2{
-        top:345px;
+        top:365px;
     }
     .panel.right #icon3{
-        top:445px;
+        top:507px;
     }
 
     .left .content .title {
@@ -748,11 +749,10 @@ body {
     .right .content .title {
         padding: 0 2px;
     }
-
     .panel .cta {
         min-width:150px;
         max-width: 300px;
-        width:80%;
+        width:85%;
         height: auto;
         font-size: 13px;
         left:0;
