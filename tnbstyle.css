@@ -406,11 +406,18 @@ body {
         right: 50px;
     }
 }
+/* ipad */
 
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .top #rightLogo{
+        left:1000px
+    }
+}
 /* PC */
 /* 150% view */
 /* @media (min-width:1000px) and (max-width:1589px){ */
 /* @media (min-width: 1300px) and (max-width: 1599px) { */
+
 @media (min-width: 1179px) and (max-width: 1599px) {
     .panel .tnbLogo{
         bottom:50px;
