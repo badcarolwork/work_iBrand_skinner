@@ -454,7 +454,7 @@ body {
         width:80%;
         height:300px;
         max-width:250px;
-        top:300px;
+        top:256px;
         margin:auto;
         text-align: center;
         left:0;
@@ -462,7 +462,7 @@ body {
         position: relative;
     }
     .countdown-box .small{
-        top:150px;
+        top:121px;
         display:flex;
         justify-items: center;
         justify-content: space-around;
@@ -474,14 +474,14 @@ body {
         margin:auto;
         left:0;
         right:0;
-        top:120px;
+        top:90px;
         font-size:1.2rem;
         font-weight:bold;
     }
     .countdown-box .small-text{
         display:flex;
         align-items: center;
-        top:218px;
+        top:155px;
         margin:auto;
         left:0;
         right:0;
@@ -496,7 +496,7 @@ body {
         min-height: 25px;
     }
     .countdown-box .small-text .time-text:nth-child(1){
-        padding-left:17px;
+        padding-left:7px;
     }
     .countdown-box .small-text .time-text:nth-child(3){
         padding-right:17px;
@@ -511,7 +511,7 @@ body {
         font-size:3rem;
     }
     .date{
-        width: 50%;
+        width: 75%;
         min-width: 50px;
         min-height: 50px;
         background-image: url(datebg.png);
@@ -532,7 +532,7 @@ body {
     }
     
     .panel.right .icon{
-        width: 90%;
+        width: 70%;
         max-width: 200px;
         margin:auto;
         left:0;
@@ -542,10 +542,10 @@ body {
         top:245px;
     }
     .panel.right #icon2{
-        top:365px;
+        top:320px;
     }
     .panel.right #icon3{
-        top:507px;
+        top:405px;
     }
 
     .left .content .title {
@@ -563,6 +563,7 @@ body {
         font-size: 13px;
         left:0;
         right:0;
+        top:600px;
     }
 }
  /* 125% view */
