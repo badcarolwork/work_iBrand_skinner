@@ -763,7 +763,7 @@ body {
 
 /** above 1920 screen*/
 /* @media (min-width:1921px) { */
-@media (min-height: 1180px){
+@media (max-width: 2380px) and (min-height: 1180px){
     .panel .tnbLogo{
         bottom:50px;
         left:0;
