@@ -606,7 +606,6 @@ body {
         right:0;
         margin:auto;
         top:-33px;
-        transform: scale(0.5);
     }
     .panel.left .countdown-box{
         width:80%;

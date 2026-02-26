@@ -116,7 +116,7 @@ function topAnimate() {
   }
   const topTl = gsap.timeline();
   topTl
-    .to("#icon", { scale: 1, opacity: 1, duration: 0.8, ease: "power2.out" })
+    .to("#icon", {opacity: 1, duration: 0.8, ease: "power2.out" })
     .to("#rightLogo", { x: 10, opacity: 1, duration: 0.8, ease: "power2.out" })
     .to("#leftLogo", { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" },"<")
     // .to(".top #topLockup", { opacity: 1, duration: 0.5, ease: "power2.out" })
