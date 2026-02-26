@@ -358,23 +358,12 @@ body {
         right: 10px;
     }
 }
-@media (min-width: 360px) and (max-width: 768px) {
-    .skinner-container{
-        background-size:auto 100%;
-        background-position: center center;
-        background-image:url(bg-mobile.jpg);
-    }
-    .top #leftLogo, .top #rightLogo{
-        width:200px;
-        right:0;
-        top:10px;
-    }
-    .top #leftLogo{
-        left:4px;
-    }
-    .top #icon{
-        left: 10px;
-        width: 200px;
+@media (min-width: 495px) and (max-width: 768px) {
+    .top #leftLogo,.top #rightLogo{
+        width:230px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
 
