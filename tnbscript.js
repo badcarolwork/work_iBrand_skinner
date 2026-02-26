@@ -17,6 +17,8 @@ window.onload = function () {
   panelHeight = centerHeight + 500;
   gsap.set(".left, .right", { width: panelWidth });
   addEvents();  
+  document.querySelector(".left .cta").classList.add("blink-1");
+  document.querySelector(".right .cta").classList.add("blink-1");
 };
 
 
