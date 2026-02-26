@@ -68,8 +68,8 @@ body {
     font-weight: bold;
     padding: 0;
     z-index: 10;
-    background-image:url(top-bg-color.jpg);
-    background-size:auto 100%;
+    /* background-image:url(top-bg-color.jpg);
+    background-size:auto 100%; */
 }
 
 .top .content {
@@ -763,7 +763,7 @@ body {
 
 /** above 1920 screen*/
 /* @media (min-width:1921px) { */
-@media (max-width: 2380px) and (min-height: 1180px){
+@media (min-width: 2380px) and (min-height: 1180px){
     .panel .tnbLogo{
         bottom:50px;
         left:0;
