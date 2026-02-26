@@ -972,18 +972,15 @@ body {
     }
 }
 
+
 .blink-1 {
-	animation: blink-1 0.6s both infinite;
+  /* 0.6s blink + 1s gap = 1.6s total */
+  animation: blink-1 1.6s linear infinite both;
 }
 
 @keyframes blink-1 {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-  25%,
-  75% {
-    opacity: 0;
-  }
+  0%, 18.75%, 37.5% { opacity: 1; }
+  9.375%, 28.125%   { opacity: 0; } 
+
 }
+
