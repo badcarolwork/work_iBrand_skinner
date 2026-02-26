@@ -359,47 +359,11 @@ body {
     }
 }
 @media (min-width: 495px) and (max-width: 768px) {
-    .panel.left, .panel.right {
-        display: none;
-    }
-    .top{
-        height: 300px;
-        background-size: auto 300px;
-    }
-    .top #logo{
-        width: 268px;
-        max-width: 268px;
-    }
-    .top #title {
-        width: 300px;
-        max-width: 390px;
-        top: 105px;
-        left: 40px;
-        opacity: 0;
-    }
-    .top #mobileCta{
-        opacity: 1;
-    }
-    .top #mixLogo{
-        opacity: 1;
-    }
-    .top #product {
-        width: 75%;
-        height: auto;
-        top: 10px;
-        right: -35%;
-    }
-
-    #bottom-text{
-        top: 30px;
-        left: 25px;
-        width: 350px;
-    }
-
-    #bottom-image{
-        width: 250px;
-        top: 30px;
-        right: 25px;
+    .top #leftLogo,.top #rightLogo{
+        width:230px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
 
@@ -625,14 +589,14 @@ body {
         width:400px;
         height:auto;
         right:137px;
-        transform: translate(-230px, 20px);
+        transform: translate(-230px, 13px);
         opacity:0
     }
     .top #leftLogo{
-        width:300px;
+        width:400px;
         height:auto;
         left:127px;
-        transform: translate(230px, 20px);
+        transform: translate(230px, 32px);
          opacity:0
     }
     .top #icon{
