@@ -79,6 +79,7 @@ function updateSize() {
 
 function startAnim() {
   gsap.set(".skinner-container", { autoAlpha: 1 });
+   document.querySelector(".top .rightLogo").src = "https://badcarolwork.github.io/work_iBrand_skinner/topLeft-logo.png"
   topAnimate();
 }
 
