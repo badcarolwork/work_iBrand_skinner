@@ -197,12 +197,12 @@ body {
     /* top: 80px; */
 }
 .left .content .title{
-    max-width: 200px;
-    top: 50px;
+    max-width: 270px;
+    top: 35px;
 }
 .right .content .title {
-   max-width: 200px;
-    top: 50px;
+   max-width: 270px;
+   top: 35px;
 }
 
 
@@ -683,17 +683,17 @@ body {
         justify-content: space-between;
     }
     .countdown-box .small-text .time-text{
-        font-size:0.35rem;
+        font-size:0.55rem;
         text-align:center;
         width: 26%;
         min-width: 25px;
         min-height: 25px;
     }
     .countdown-box .small-text .time-text:nth-child(1){
-        padding-left:8px;
+        padding-left:17px;
     }
     .countdown-box .small-text .time-text:nth-child(3){
-        padding-right:9px;
+        padding-right:17px;
     }
     #day{
         display: flex;
