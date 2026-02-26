@@ -17,8 +17,7 @@ window.onload = function () {
   panelHeight = centerHeight + 500;
   gsap.set(".left, .right", { width: panelWidth });
   addEvents();  
-  document.querySelector(".left .cta").classList.add("blink-1");
-  document.querySelector(".right .cta").classList.add("blink-1");
+ 
 };
 
 
@@ -85,7 +84,7 @@ function startAnim() {
 
 function startSideAnimate() {
   countdown();
-  const sideTl = gsap.timeline();
+  const sideTl = gsap.timeline({onComplete:ctaAni});
   sideTl.to(".panel.left",  { opacity: 1, duration: 0.5, ease: "power2.out" }, "-=3")
   .to(".panel.right", { opacity: 1, duration: 0.5, ease: "power2.out" }, "<")
   .set(".left .title",{ duration: .2, className: "pos-ab title bounce-left" },"+=.2")
@@ -98,6 +97,11 @@ function startSideAnimate() {
   .to(".right #icon1", {opacity: 1, duration: 0.5, ease: "power2.out" },"<")
   .to(".right #icon2", {opacity: 1, duration: 0.5, ease: "power2.out" })
   .to(".right #icon3", {opacity: 1, duration: 0.5, ease: "power2.out" })
+}
+
+function ctaAni(){
+  document.querySelector(".left .cta").classList.add("blink-1");
+  document.querySelector(".right .cta").classList.add("blink-1");
 }
 
 function topAnimate() {
