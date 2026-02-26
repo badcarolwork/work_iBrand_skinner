@@ -807,7 +807,7 @@ body {
         justify-content: space-between;
     }
     .countdown-box .small-text .time-text{
-        font-size:1rem;
+        font-size:.65rem;
         text-align:center;
         width: 26%;
         min-width: 25px;
