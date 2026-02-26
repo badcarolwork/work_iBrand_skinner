@@ -622,17 +622,17 @@ body {
         background-position: center top;
     }
     .top #rightLogo{
-        width:300px;
+        width:400px;
         height:auto;
-        right:150px;
-        transform: translate(-230px, 35px);
+        right:137px;
+        transform: translate(-230px, 20px);
         opacity:0
     }
     .top #leftLogo{
         width:300px;
         height:auto;
-        left:150px;
-        transform: translate(230px, 45px);
+        left:127px;
+        transform: translate(230px, 20px);
          opacity:0
     }
     .top #icon{
@@ -782,17 +782,17 @@ body {
         background-position: center top;
     }
     .top #rightLogo{
-        width:300px;
+        width:400px;
         height:auto;
-        right:150px;
-        transform: translate(-230px, 35px);
+        right:137px;
+        transform: translate(-230px, 10px);
         opacity:0
     }
     .top #leftLogo{
-        width:300px;
+        width:400px;
         height:auto;
-        left:150px;
-        transform: translate(230px, 45px);
+        left:127px;
+        transform: translate(230px, 35px);
          opacity:0
     }
     .top #icon{
