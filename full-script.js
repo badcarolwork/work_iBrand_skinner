@@ -13,14 +13,14 @@ function setCollapseFrame() {
 }
 
 window.addEventListener("message", function (event) {
-  const message = event.data;
-  if (message && message.data) {
-    
-    if(message.data.text === "kscrollReveal"){
-      parentW = message.data.width;
-      parentH = message.data.height;
+    const message = event.data;
+    if (message && message.data) {
+
+        if (message.data.text === "kscrollReveal") {
+            parentW = message.data.width;
+            parentH = message.data.height;
+        }
     }
-  }
 });
 
 function playTear() {
@@ -61,29 +61,37 @@ function handleClickthrough(e) {
     myFT.clickTag(1);
 }
 
-function init() {    
+function init() {
     setTimeout(() => {
-        if(parentW && parentH){
+        if (parentW && parentH) {
             playTear();
-        }        
+        }
     }, 1000);
-    expanded.addEventListener("click",handleClickthrough)
+    expanded.addEventListener("click", handleClickthrough)
 }
 
-window.onload = function(){    
+window.onload = function () {
     init();
-   window.addEventListener("message", function (e) {
-    const data = e.data;
-    console.log(e.data)
-    if (data.method === "dispatch") {
+    window.addEventListener("message", function (e) {
+        const data = e.data;
+        console.log(data)
         if (data?.source !== "kult") return;
-        if (data.msg.ev === "orientationchange" || data.msg.ev === "maxsizechange") {
-            console.log(data.msg)
-            const { width, height } = data.msg.msg;
-            parentW = width
-            parentH = height
-        }
-    }
+        const { width, height } = data.data;
+        console.log(width, height);
+
     });
+    //    window.addEventListener("message", function (e) {
+    //     const data = e.data;
+    //     console.log(e.data)
+    //     if (data.method === "dispatch") {
+    //         if (data?.source !== "kult") return;
+    //         if (data.msg.ev === "orientationchange" || data.msg.ev === "maxsizechange") {
+    //             console.log(data.msg)
+    //             const { width, height } = data.msg.msg;
+    //             parentW = width
+    //             parentH = height
+    //         }
+    //     }
+    //     });
 }
 
