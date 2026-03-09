@@ -74,10 +74,13 @@ window.onload = function(){
     init();
    window.addEventListener("message", function (e) {
     const data = e.data;
+    console.log(e.data)
     if (data.method === "dispatch") {
         if (data.msg.ev === "orientationchange" || data.msg.ev === "maxsizechange") {
+            console.log(data.msg)
             const { width, height } = data.msg.msg;
-            console.log(width, height);
+            parentW = width
+            parentH = height
         }
     }
     });
