@@ -63,7 +63,9 @@ function handleClickthrough(e) {
 
 function init() {    
     setTimeout(() => {
-        playTear();
+        if(parentW && parentH){
+            playTear();
+        }        
     }, 1000);
     expanded.addEventListener("click",handleClickthrough)
 }
