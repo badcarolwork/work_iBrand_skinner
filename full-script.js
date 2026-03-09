@@ -76,6 +76,7 @@ window.onload = function(){
     const data = e.data;
     console.log(e.data)
     if (data.method === "dispatch") {
+        if (data?.source !== "kult") return;
         if (data.msg.ev === "orientationchange" || data.msg.ev === "maxsizechange") {
             console.log(data.msg)
             const { width, height } = data.msg.msg;
