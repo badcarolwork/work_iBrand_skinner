@@ -72,15 +72,12 @@ function init() {
 
 window.onload = function(){    
     init();
-    window.addEventListener("message", function (event) {
-        const message = event.data;
-        console.log(event.data)
-        console.log(event.data.msg?.msg)
-        if (message && message.data) {            
-            if(message.data.text === "kscrollReveal"){
-            parentW = message.data.width;
-            parentH = message.data.height;
-            }
+    window.addEventListener("message", function (e) {
+        const data = e.data;
+        if (data.method === "dispatch") {
+            const size = data.msg.msg
+            console.log(size.width)
+            console.log(size.height)
         }
     });
 }
