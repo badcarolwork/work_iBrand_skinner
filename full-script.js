@@ -74,7 +74,7 @@ window.onload = function(){
     init();
     window.addEventListener("message", function (event) {
         const message = event.data;
-        console.log(message.data)
+        console.log(event)
         if (message && message.data) {            
             if(message.data.text === "kscrollReveal"){
             parentW = message.data.width;
