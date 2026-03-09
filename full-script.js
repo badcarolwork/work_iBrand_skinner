@@ -74,6 +74,7 @@ window.onload = function(){
     init();
     window.addEventListener("message", function (e) {
         const data = e.data;
+        console.log(data)
         if (data.method === "dispatch") {
             const size = data.msg.msg
             console.log(size.width)
