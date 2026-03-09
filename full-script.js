@@ -74,13 +74,11 @@ window.onload = function(){
     init();
    window.addEventListener("message", function (e) {
     const data = e.data;
-    console.log(data)
-    if (data.source === "kult" && data.event === "kultEvent") {
-        const width = data.data.width;
-        const height = data.data.height;
-
-        console.log("parent width:", width);
-        console.log("parent height:", height);
+    if (data.method === "dispatch") {
+        if (data.msg.ev === "orientationchange" || data.msg.ev === "maxsizechange") {
+            const { width, height } = data.msg.msg;
+            console.log(width, height);
+        }
     }
     });
 }
