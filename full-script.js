@@ -72,14 +72,16 @@ function init() {
 
 window.onload = function(){    
     init();
-    window.addEventListener("message", function (e) {
-        const data = e.data;
-        console.log(data)
-        if (data.method === "dispatch") {
-            const size = data.msg.msg
-            console.log(size.width)
-            console.log(size.height)
-        }
+   window.addEventListener("message", function (e) {
+    const data = e.data;
+    console.log(data)
+    if (data.source === "kult" && data.event === "kultEvent") {
+        const width = data.data.width;
+        const height = data.data.height;
+
+        console.log("parent width:", width);
+        console.log("parent height:", height);
+    }
     });
 }
 
