@@ -74,6 +74,7 @@ window.onload = function () {
     init();
     window.addEventListener("message", function (e) {
         let data = e.data;
+        console.log(e.data)
         if (typeof data === "string") {
             try {
                 data = JSON.parse(data);
@@ -81,10 +82,7 @@ window.onload = function () {
                 return;
             }
         }
-        if (data?.source !== "kult") return;
-        const { width, height } = data.data;
-        console.log(width, height);
-
+        console.log(data)
     });
     //    window.addEventListener("message", function (e) {
     //     const data = e.data;
