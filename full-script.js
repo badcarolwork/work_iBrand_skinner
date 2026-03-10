@@ -82,7 +82,8 @@ window.onload = function () {
                 return;
             }
         }
-        console.log(data)
+        console.log(data.msg.msg.height)
+        console.log(data.msg.msg.width)
     });
     //    window.addEventListener("message", function (e) {
     //     const data = e.data;
