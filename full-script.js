@@ -4,38 +4,36 @@ let parentW;
 let parentH;
 function setCollapseFrame() {
     window.parent.postMessage(
-        {
-            source: "iframe",
+        {source: "iframe",
             event: "requestCollapseFrame",
         },
         "*"
     );
 }
-
 window.addEventListener("message", function (event) {
-    const message = event.data;
+    const msg = event.data;
+    console.log(msg)
     if (message && message.data) {
-
-        if (message.data.text === "kscrollReveal") {
+        if (message.data.text === "kultFSE") {
             parentW = message.data.width;
             parentH = message.data.height;
         }
     }
 });
-
 function playTear() {
+    console.log("har  "+parentW)
     const tl = gsap.timeline();
     tl
         .to("#cut1 #cut1text", { opacity: 0, ease: "power2.out", duration: 1, })
-        .to("#cut1 .torn-ani", { x: parentW, ease: "power2.out", duration: 1 }, "-=.3")
+        .to("#cut1 .torn-ani", { x: window.innerWidth, ease: "power2.out", duration: 1 }, "-=.3")
         .to("#cut1P", { opacity: 1, ease: "power2.out", duration: 1 }, "-=0.7")
         .to("#logo", { opacity: 1, ease: "power4.out", duration: .7 }, "<")
-        .to("#tornTop", { y: -parentH, ease: "power2.out", duration: 1.5 })
-        .to("#tornbottom", { y: parentH, ease: "power2.out", duration: 1.5 }, "<")
+        .to("#tornTop", { y: -window.innerWidth, ease: "power2.out", duration: 1.5 })
+        .to("#tornbottom", { y: window.innerHeight, ease: "power2.out", duration: 1.5 }, "<")
         .to("#logo", {
             scale: .6,
-            yPercent: parentW > 1000 ? -82 : -80,
-            xPercent: parentW > 1000 ? -54 : -20, ease: "power4.out", duration: .7
+            yPercent: window.innerHeight > 1000 ? -82 : -80,
+            xPercent: window.innerWidth > 1000 ? -54 : -20, ease: "power4.out", duration: .7
         }, "<")
         .to("#cut1P", { opacity: 1, scale: 1, rotationZ: 10, ease: "elastic.out(1,0.3)", duration: .8 }, "-=.5")
         .to("#nut", { opacity: 1, ease: "power4.out", duration: .5 }, "<")
@@ -63,7 +61,7 @@ function handleClickthrough(e) {
 
 function init() {
     setTimeout(() => {
-        if (parentW && parentH) {
+        if (window.innerWidth && window.innerHeight) {
             playTear();
         }
     }, 1000);
@@ -72,29 +70,5 @@ function init() {
 
 window.onload = function () {
     init();
-    window.addEventListener("message", function (e) {
-        let data = e.data;
-        if (typeof data === "string") {
-            try {
-                data = JSON.parse(data);
-            } catch {
-                return;
-            }
-        }
-        console.log(data)
-    });
-    //    window.addEventListener("message", function (e) {
-    //     const data = e.data;
-    //     console.log(e.data)
-    //     if (data.method === "dispatch") {
-    //         if (data?.source !== "kult") return;
-    //         if (data.msg.ev === "orientationchange" || data.msg.ev === "maxsizechange") {
-    //             console.log(data.msg)
-    //             const { width, height } = data.msg.msg;
-    //             parentW = width
-    //             parentH = height
-    //         }
-    //     }
-    //     });
 }
 
