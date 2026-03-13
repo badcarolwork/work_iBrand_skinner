@@ -11,7 +11,7 @@ function setCollapseFrame() {
     );
 }
 window.addEventListener("message", function (event) {
-    const msg = event.data;
+    const msg = JSON.parse(event.data);
     console.log(msg)
     if (message && message.data) {
         if (message.data.text === "kultFSE") {
@@ -22,7 +22,7 @@ window.addEventListener("message", function (event) {
 });
 function playTear() {
     console.log("har  "+parentW)
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({onComplete:handleresize});
     tl
         .to("#cut1 #cut1text", { opacity: 0, ease: "power2.out", duration: 1, })
         .to("#cut1 .torn-ani", { x: window.innerWidth, ease: "power2.out", duration: 1 }, "-=.3")
@@ -41,17 +41,13 @@ function playTear() {
         .to("#cut2text", { opacity: 1, ease: "power4.out", duration: .8 })
         .to(".shine-wrapper", { opacity: 1, ease: "power4.out", duration: .8 })
 }
-1
-// closeBtn.addEventListener("click", () => {    
-//     setCollapseFrame();
-//     closeBtn.style.display = "none";
-//     gsap.to("#expanded", {
-//         opacity:0,
-//         duration: 0.6,
-//         ease: "power2.in",
-//     });
-//     gsap.set("#expanded", {display:"none",delay:.8});
-// });
+
+function handleresize(){
+     window.addEventListener("resize", (e) => {
+        console.log(e)
+        gsap.set(".torn-ani",{x: window.innerWidth})
+      })
+}
 
 function handleClickthrough(e) {
     e.stopPropagation();
@@ -70,5 +66,6 @@ function init() {
 
 window.onload = function () {
     init();
+   
 }
 
